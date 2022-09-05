@@ -136,7 +136,8 @@ dl {
 /* >= 414px is OK, use 500px for more flexibility */
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 44px;
+    font-size: 40px;
+    letter-spacing: 2px;
   }
   h2 {
     font-size: 20px;
