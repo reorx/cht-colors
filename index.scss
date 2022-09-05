@@ -89,6 +89,7 @@ dl {
   line-height: 1.618;
   float: left;
   margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .colorName {
@@ -120,6 +121,10 @@ dl {
 
 .colorDesc {
   line-height: 1.618;
+  font-size: 14px;
+}
+.colorDesc.small {
+  font-size: 13px;
 }
 
 #copyright {
@@ -148,12 +153,17 @@ dl {
   .colorBox {
     width: 80px;
     height: 80px;
+    margin-bottom: 0;
   }
   .colorValue {
     margin-bottom: 18px;
   }
   .colorDesc {
     clear: left;
+  }
+  .colorDesc.small {
+    /* reset to normal */
+    font-size: 14px;
   }
 
   #wrapper {
