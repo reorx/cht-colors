@@ -97,7 +97,7 @@ dl {
     "Microsoft JhengHei", "STHeiti", Arial, Helvetica, sans-serif;
   font-size: 2em;
   line-height: 1;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.7em;
   color: rgb(0, 0, 51);
   text-shadow: 0pt 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -106,12 +106,14 @@ dl {
   color: rgb(0, 0, 51);
   text-transform: uppercase;
   margin-bottom: 0.8em;
+  line-height: 1.618;
 
   span {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Console', monospace;
+    user-select: all;
     color: rgb(102, 51, 0);
     font-weight: bolder;
-    padding: 2px 5px;
+    padding: 1px 3px;
     background-color: rgba(204, 204, 204, 0.3);
     text-shadow: 0pt 1px 1px rgba(255, 255, 255, 0.8);
   }
