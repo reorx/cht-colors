@@ -23,4 +23,4 @@ TODO
   - [x] main
   - [x] painting
 - [x] remove shade
-- [ ] click to copy
+- [x] click to ~~copy~~ select color code
