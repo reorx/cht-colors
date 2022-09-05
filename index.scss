@@ -86,7 +86,6 @@ dl {
   display: block;
   width: 120px;
   height: 120px;
-  text-transform: uppercase;
   line-height: 1.618;
   float: left;
   margin-right: 1em;
@@ -144,6 +143,17 @@ dl {
   }
   dl {
     width: 100%;
+    height: auto;
+  }
+  .colorBox {
+    width: 78px;
+    height: 78px;
+  }
+  .colorValue {
+    margin-bottom: 18px;
+  }
+  .colorDesc {
+    clear: left;
   }
 
   #wrapper {
