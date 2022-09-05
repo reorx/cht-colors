@@ -22,5 +22,5 @@ TODO
 - [x] responsive
   - [x] main
   - [x] painting
+- [x] remove shade
 - [ ] click to copy
-- [ ] toggle shade
