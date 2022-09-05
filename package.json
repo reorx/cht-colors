@@ -4,12 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.54.8",
-    "vite": "^3.0.7"
+    "vite": "^3.0.7",
+    "vite-plugin-handlebars": "^1.6.0"
   }
 }
