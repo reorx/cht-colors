@@ -1,9 +1,8 @@
-/* ::::: http://exfoo.info/color/main.css ::::: */
-
 * {
   margin: 0pt;
   padding: 0pt;
 }
+
 body {
   font: 1em/1.625 Georgia, "Times New Roman", Times, serif;
   color: rgb(0, 102, 102);
@@ -11,10 +10,12 @@ body {
   margin: 0pt;
   padding: 3em 0pt;
 }
+
 #wrapper {
   width: 980px;
   margin: 0pt auto;
 }
+
 h1 {
   font-family: "LiHei", "LiHei Pro Medium", "Microsoft YaHei",
     "Microsoft JhengHei", "STHeiti", Arial, Helvetica, sans-serif;
@@ -27,6 +28,7 @@ h1 {
   letter-spacing: 0.2em;
   text-shadow: 0pt 0.08em 0.04em rgba(0, 0, 0, 0.2);
 }
+
 h2 {
   font-size: 2em;
   font-weight: normal;
@@ -37,22 +39,27 @@ h2 {
   text-transform: uppercase;
   text-shadow: 0pt 0px 5px rgba(0, 0, 0, 0.3);
 }
+
 p#Author {
   text-align: center;
   margin-bottom: 1.625em;
 }
+
 a {
   color: rgb(102, 102, 0);
   text-decoration: none;
+
+  &:hover {
+    color: rgb(0, 0, 51);
+    text-decoration: none;
+  }
 }
-a:hover {
-  color: rgb(0, 0, 51);
-  text-decoration: none;
-}
+
 #colorList {
   width: 980px;
   overflow: hidden;
 }
+
 dl {
   line-height: 1.2;
   font-size: 0.75em;
@@ -62,10 +69,12 @@ dl {
   height: 125px;
   border-bottom: 1px dotted rgb(153, 153, 153);
   margin-right: 20px;
+
+  &:hover {
+    background-color: rgba(204, 204, 204, 0.1);
+  }
 }
-dl:hover {
-  background-color: rgba(204, 204, 204, 0.1);
-}
+
 .colorBox {
   display: block;
   width: 120px;
@@ -76,9 +85,8 @@ dl:hover {
   line-height: 1.618;
   float: left;
   margin-right: 1em;
-  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  -moz-border-radius: 5px 5px 5px 5px;
 }
+
 .colorName {
   font-family: "LiHei", "LiHei Pro Medium", "Microsoft YaHei",
     "Microsoft JhengHei", "STHeiti", Arial, Helvetica, sans-serif;
@@ -88,23 +96,26 @@ dl:hover {
   color: rgb(0, 0, 51);
   text-shadow: 0pt 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .colorValue {
   color: rgb(0, 0, 51);
   text-transform: uppercase;
   margin-bottom: 0.8em;
+
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 51, 0);
+    font-weight: bolder;
+    padding: 2px 5px;
+    background-color: rgba(204, 204, 204, 0.3);
+    text-shadow: 0pt 1px 1px rgba(255, 255, 255, 0.8);
+  }
 }
-.colorValue span {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(102, 51, 0);
-  font-weight: bolder;
-  padding: 2px 5px;
-  background-color: rgba(204, 204, 204, 0.3);
-  -moz-border-radius: 5px 5px 5px 5px;
-  text-shadow: 0pt 1px 1px rgba(255, 255, 255, 0.8);
-}
+
 .colorDesc {
   line-height: 1.618;
 }
+
 #copyright {
   clear: both;
   font-size: small;
