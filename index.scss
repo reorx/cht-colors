@@ -12,7 +12,7 @@ body {
 }
 
 #wrapper {
-  width: 980px;
+  max-width: 980px;
   margin: 0pt auto;
 }
 
@@ -45,7 +45,11 @@ h2 {
   margin-bottom: 1.625em;
 
   .sub {
+    display: inline-block;
     margin-inline-start: 1.5em;
+    &:nth-of-type(1) {
+      margin-inline-start: 0;
+    }
   }
 }
 
@@ -60,7 +64,6 @@ a {
 }
 
 #colorList {
-  width: 980px;
   overflow: hidden;
 }
 
@@ -126,4 +129,29 @@ dl {
   text-align: center;
   padding: 3em 0pt;
   text-transform: uppercase;
+}
+
+/* responsive */
+
+/* >= 414px is OK, use 500px for more flexibility */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 44px;
+  }
+  dl {
+    width: 100%;
+  }
+
+  #wrapper {
+    padding: 0 10px;
+  }
+
+  #Author {
+    text-align: left;
+    .sub {
+      display: block;
+      margin-inline-start: 0;
+    }
+  }
+
 }
