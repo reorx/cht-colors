@@ -72,12 +72,13 @@ a {
 dl {
   line-height: 1.2;
   font-size: 0.75em;
+  margin: 0 10px;
   padding: 20px 0pt;
+  /* total width: 490 */
   width: 470px;
   height: 125px;
   border-bottom: 1px dotted rgb(153, 153, 153);
-  margin: auto;
-  &:hover {
+  &:hover, &:focus {
     background-color: rgba(204, 204, 204, 0.1);
   }
 }
@@ -137,8 +138,8 @@ dl {
 
 /* responsive */
 
-/* >= 414px is OK, use 500px for more flexibility */
-@media screen and (max-width: 500px) {
+/* smaller width */
+@media screen and (max-width: 980px) {
   h1 {
     font-size: 40px;
     letter-spacing: 2px;
@@ -146,6 +147,19 @@ dl {
   h2 {
     font-size: 20px;
   }
+  #colorList {
+    justify-content: center;
+  }
+  #Author {
+    .sub {
+      display: block;
+      margin-inline-start: 0;
+    }
+  }
+}
+
+/* >= 414px is OK, use 500px for more flexibility */
+@media screen and (max-width: 500px) {
   dl {
     width: 100%;
     height: auto;
@@ -165,17 +179,4 @@ dl {
     /* reset to normal */
     font-size: 14px;
   }
-
-  #wrapper {
-    padding: 0 10px;
-  }
-
-  #Author {
-    text-align: left;
-    .sub {
-      display: block;
-      margin-inline-start: 0;
-    }
-  }
-
 }
