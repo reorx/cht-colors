@@ -65,18 +65,18 @@ a {
 
 #colorList {
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 dl {
   line-height: 1.2;
   font-size: 0.75em;
   padding: 20px 0pt;
-  float: left;
   width: 470px;
   height: 125px;
   border-bottom: 1px dotted rgb(153, 153, 153);
-  margin-right: 20px;
-
+  margin: auto;
   &:hover {
     background-color: rgba(204, 204, 204, 0.1);
   }
