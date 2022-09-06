@@ -158,8 +158,7 @@ dl {
   }
 }
 
-/* >= 414px is OK, use 500px for more flexibility */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 490px) {
   dl {
     width: 100%;
     height: auto;
