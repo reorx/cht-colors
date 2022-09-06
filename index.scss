@@ -64,7 +64,6 @@ a {
 }
 
 #colorList {
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
 }
@@ -78,7 +77,7 @@ dl {
   width: 470px;
   height: 125px;
   border-bottom: 1px dotted rgb(153, 153, 153);
-  &:hover, &:focus {
+  &:hover, &:active {
     background-color: rgba(204, 204, 204, 0.1);
   }
 }
