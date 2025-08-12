@@ -1,0 +1,46 @@
+# GitHub Actions workflow to build and deploy to Cloudflare Pages
+# 
+# Required secrets:
+# - CLOUDFLARE_API_TOKEN: Cloudflare API token with Pages:Edit permission
+# - CLOUDFLARE_ACCOUNT_ID: Cloudflare account ID
+#
+name: Build and Deploy to CF Pages
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build site
+        if: github.ref == 'refs/heads/master'
+        run: npm run build
+
+      - name: Publish to Cloudflare Pages
+        if: github.ref == 'refs/heads/master'
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: cht-colors
+          directory: dist
+          branch: master
